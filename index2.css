@@ -1,0 +1,98 @@
+h1 {
+
+    display: flex;
+    flex-direction: row;
+  }
+  h1:before, h1:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+  }
+  h1:before {
+    margin-right: 10px
+  }
+  h1:after {
+    margin-left: 10px
+  }
+  
+
+  #btn{
+      display: flex;
+      justify-content: center;
+  }
+
+  .block{
+      height: 300px;
+      width: 300px;
+      border: 1px solid orange;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 2px 2px 2px 2px gray;
+  }
+
+  
+  #add{
+    position: relative;
+      top: 130px;
+      left: 30px;
+  }
+  .fill{
+display: flex;
+justify-content: center;
+
+  }
+
+
+  @media only screen and (max-width: 500px){
+
+
+    h1 {
+
+      display: flex;
+      flex-direction: column;
+    }
+    h1:before, h1:after{
+      content: "";
+      flex: 1 1;
+      border-bottom: 1px solid;
+      margin: auto;
+    }
+    h1:before {
+      margin-right: 10px
+    }
+    h1:after {
+      margin-left: 10px
+    }
+    
+  
+    #btn{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+  
+    .block{
+        height: 200px;
+        width: 300px;
+        border: 1px solid orange;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 2px 2px 2px 2px gray;
+        overflow: scroll;
+        cursor: pointer;
+    }
+  
+    
+    #add{
+      position: relative;
+        top: 130px;
+        left: 30px;
+    }
+    .fill{
+  display: flex;
+  justify-content: center;
+  
+    }
+
+  }
